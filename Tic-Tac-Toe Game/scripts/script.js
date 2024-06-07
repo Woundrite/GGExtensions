@@ -52,7 +52,7 @@ function checkDraw() {
         if (isDraw) {
             isGameOver = true;
             document.querySelector("#results").innerHTML = "Match drawn";
-            document.querySelector("#play-again").innerHTML = "inline";
+            document.querySelector("#play-again").style.display = "inline";
         }
     }
 }
@@ -70,6 +70,16 @@ function changeTurn() {
         document.querySelector(".bg").style.left = "0";
     }
 }
+
+
+    reset = document.querySelector(".reset");
+    reset.addEventListener("click", (e)=>{
+        boxes.forEach(e => {
+            e.innerHTML = "";
+            e.style.removeProperty("background-color")
+            e.style.color = "#fff"
+        })
+    });
 
 
 

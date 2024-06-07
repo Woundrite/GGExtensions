@@ -18,7 +18,6 @@ body {
     background-color: #252A34;
     margin: 0;
     padding: 0;
-    width: 100vw;
     text-align: center;
     padding-top: 5vh;
 }
@@ -98,4 +97,12 @@ main {
     padding: 10px 40px;
     background-color: #08d9d6;
     color: black;
+}
+
+.reset{
+    color: #ff2e63;
+    background-color:transparent;
+    cursor: pointer;
+    height: 38px;
+    width: 70px;
 }

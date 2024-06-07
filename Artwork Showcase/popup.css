@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+#artwork-container {
+    width: 100vw;
+    height: 100vh;
+    /* top:50%; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 2px solid black; */
+    /* margin: 50px auto; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* overflow: auto;Add overflow scrolling*/
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: center; */
+}
+
+
+
+.artwork img {
+    left: 5vw;
+    margin-left: 5vw;
+    /* position: absolute; */
+    width: 100%;
+    border: 2px solid black;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+.artwork-content {
+    position: absolute;
+    left: 35vw;
+}
+
+#artwork-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#artwork-artist {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#artwork-description {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    padding-right: 5vw;
+
+}
+
+#next-button {
+    height: 7vh;
+    width: 8vw;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#next-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
